@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Average Score Finder</title>
+	<link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+    <style>
+    	body {
+    		font-family: Calistoga, sans-serif;
+    		background-color: #FFFFFF;
+    		padding: 38px;
+    		max-width: 400px;
+    		margin: auto;
+    		border: 2px solid #cccaca;
+    		border-radius: 8px;
+    		background-color: ghostwhite;
+    		box-shadow: 0 0 10px rgba;
+    	}
+
+    	h2 {
+    		text-align: center;
+    		color: 212D40;
+    	}
+
+    	input {
+    		width: 100%;
+    		padding: 10px;
+    		margin-bottom: 16px;
+    		border: 2px solid #ccc;
+    		border-radius: 6px;
+    		font-size: 16px;
+    	}
+
+    	button {
+    		width: 100%;
+    		padding: 12px;
+    		background-color: #011936;
+    		color: ghostwhite;
+    		font-size: 16px;
+    		border: none;
+    		border-radius: 5px;
+    		cursor: pointer;
+    	}
+
+    	button:hover {
+    		background-color: #6CCFF6;
+    	}
+
+    	p {
+    		font-size: 16px;
+    		margin-top: 11px;
+    	}
+
+    	#average, #result {
+    		font-weight: bold;
+    		color: 0267C1;
+    	}
+    </style>
+</head>
+</html>
+
+<h2>Simple Average Score Finder</h2>
+
+<p>Score 1:</p>
+<input id="score1" type="text">
+
+<p>Score 2:</p>
+<input id="score2" type="text">
+
+<button py-click="compute_average">Compute</button>
+<p>Average: <span id="average"></span></p>
+<p>Passed? <span id="result"></span></p>
+
+<script type="py" src="main.py"></script>
+</body>
+</html>
